@@ -33,16 +33,35 @@ div {
 }
 
 .left-cloud {
-    position: absolute;
-    left: 100px;
-    bottom: 350px;
+    position: relative;
+    top: 25px;
+    margin-right: 20px;
+}
+
+@media (max-width: 768px) {
+    .left-cloud {
+        position: absolute;
+        top: 10px;
+        bottom: 0px;
+        left: 2%;
+    }
 }
 
 .right-cloud {
-    position: absolute;
-    right: 100px;
-    bottom: 350px;
+    position: relative;
+    top: 25px;  
+    margin-left: 20px;
 }
+
+@media (max-width: 768px){
+    .right-cloud {
+        position: absolute;
+        top: 300px;
+        right: 5%;
+    }
+}
+
+
 
 .mountain{
     padding-top: 50px;
@@ -154,3 +173,55 @@ div {
     background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
     text-decoration: none;
   }
+
+
+  /*
+Other possibilites for display of icons:
+
+.left-cloud {
+    position: absolute;
+    left: 100px;
+    bottom: 350px;
+}
+
+
+
+@media (max-width: 1110px) {
+    .left-cloud {
+        top: 50px;
+        bottom: 0px;
+        left: 2%;
+    }
+}
+
+@media (max-width: 768px) {
+    .left-cloud {
+        top: 10px;
+        bottom: 0px;
+        left: 2%;
+    }
+}
+
+.right-cloud {
+    position: absolute;
+    right: 100px;
+    bottom: 350px;
+}
+
+
+@media (max-width: 1110px){
+    .right-cloud {
+        top: 250px;
+        right: 5%;
+    }
+}
+
+@media (max-width: 768px){
+    .right-cloud {
+        top: 300px;
+        right: 5%;
+    }
+}
+
+
+  */
